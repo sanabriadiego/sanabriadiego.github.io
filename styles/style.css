@@ -1,0 +1,226 @@
+/*GENERAL STYLES*/
+
+html{
+    font-family: 'Noto Serif', serif;
+    font-size: 10px;
+}
+
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 2.5em;
+}
+
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+
+}
+
+p{
+    font-size: 1.7em;
+    line-height: 1.7em;
+    text-align: justify;
+}
+
+
+/*NAV*/
+
+.main-nav{
+    font-size: 2em;
+}
+
+.main-nav ul{
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-type: none;
+
+}
+
+.main-nav ul li{
+    background-color: #004996;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:active{
+    color: #f27500;
+
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+
+}
+
+/*FOOTER*/
+
+.foot{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.foot p{
+    font-size: 1.5em;
+    display: inline;
+}
+
+.foot a{
+    color: #004996;
+
+}
+
+i.fab{
+    font-size: 2em;
+    margin: 0 0.3em;
+    color: #1da1f2;
+
+}    
+
+
+/*INDEX*/
+
+.index-main section{
+    margin-top: 50px;
+}
+
+.index-main img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/*LEGENDS*/
+
+.leg-main section img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+div ul{
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+
+ul ul{
+    font-size: inherit;
+}
+
+.logo-bullet,
+.logo-bullet li ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.logo-bullet li{
+    padding-left: 3rem;
+    background-image: url(../images/rm.svg);
+    background-position: 0 0;
+    background-size: 2.5rem 2.5rem;
+    background-repeat: no-repeat;
+}
+
+
+/*STADIUM*/
+
+.std-main section img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section iframe{
+    width: 350px;
+    height: 500px;
+
+}
+
+/*TROPHIES*/
+
+.tp-main section img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 800px){
+
+    /*INDEX*/
+
+    .grid-main{
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 30px;
+    }
+
+    .float-main img{
+        float: left;
+        margin-right: 30px;
+    }
+
+    p{
+        margin-top: 0;
+    }
+
+    /*NAV*/
+
+    .main-nav ul{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .main-nav ul li{
+        flex: 1;
+    }
+
+    /*LEGENDS*/
+
+    .grid-leg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    /*STADIUM*/
+
+    .std-main .float-std img{
+        float: left;
+        margin-right: 30px;
+    }
+
+    section iframe{
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+    
+    }
+
+    /*TROPHIES*/
+
+    .grid-tp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+
+}
