@@ -1,0 +1,146 @@
+/*------------------------------------------------------------------------------------------------------
+GENERAL STYLES
+---------------------------------------------------------------------------------------------------*/
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+h1{
+    font-size: 4em;
+    
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 2.5em;
+}
+
+
+h1, h2, h3, h5{
+    margin-top: 30px;
+    font-family: 'Merriweather', serif;
+
+}
+
+p{
+    font-size: 1.7em;
+    line-height: 1.7em;
+    text-align: justify;
+}
+/*------------------------------------------------------------------------------------------------------
+MODAL
+---------------------------------------------------------------------------------------------------*/
+
+.modal-header{
+    background-color: #835198;
+}
+
+.modal-title{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.modal-body label,
+.modal-body input,
+.modal-footer button{
+    font-size: 1.7em;
+}
+
+/*------------------------------------------------------------------------------------------------------
+NAVIGATION BAR
+---------------------------------------------------------------------------------------------------*/
+
+
+.nav-link{
+    font-size: 1.7em;
+}
+
+.subscribeBtn{
+    background-color: #f5692b;
+    font-size: 1.7em;
+}
+
+
+/*------------------------------------------------------------------------------------------------------
+LEGENDS
+---------------------------------------------------------------------------------------------------*/
+
+div ul{
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+
+ul ul{
+    font-size: inherit;
+}
+
+.logo-bullet,
+.logo-bullet li ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.logo-bullet li{
+    padding-left: 3rem;
+    background-image: url(../images/rm.svg);
+    background-position: 0 0;
+    background-size: 2.5rem 2.5rem;
+    background-repeat: no-repeat;
+}
+
+/*------------------------------------------------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------------------------------------------*/
+
+footer{
+    margin-top: 30px;
+    background: #000;
+}
+
+footer a{
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+footer h5{
+    font-size: 1.7em;
+    color: #fff;
+}
+
+i.fab, i.fas{
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+i.fas{
+    color: #f5692b;
+}
+
+.fa-facebook-square{
+    color: #0e90f2;
+}
+
+.fa-twitter-square{
+    color: #1d9bef;
+}
+
+.fa-instagram-square{
+    color: #d00a5f;
+}
+
+.fa-youtube-square{
+    color: #ff0000;
+}
+
+footer p{
+    font-size: 1.3em;
+    color: #fff;
+}
