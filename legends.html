@@ -2,86 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Sanabria">
-    <meta name="description" content="This is a website developed for the last course of the Web Design For Everybody Specialization on Coursera. I want to show most of the ideas taught on this course, and my aprecciation to Colleen van Lent Ph.D., for being such an amazing professor">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <!--Local CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Legends</title>
 </head>
 <body>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Become an Official Member!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="container">
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="exampleInputName" class="form-label">Name</label>
+              </div>
+              <div class="col-7">
+                <input type="text" class="form-control" id="exampleInputName">
+              </div>   
+            </div>
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="examplebirthday" class="form-label">Birthday</label>
+              </div>
+              <div class="col-7">
+                <input type="date" class="form-control" id="examplebirthday">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="exampleEmail" class="form-label">Email</label>
+              </div>
+              <div class="col-7">
+                <input type="email" class="form-control" id="exampleEmail" placeholder="@example">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <header>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="legends.html">Legends</a></li>
-                <li><a href="stadium.html">Stadium</a></li>
-                <li><a href="trophies.html">Trophies</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/rm-logo-mb.png" alt="Real Madrid Logo" width="30" height="38" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link me-lg-3" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link me-lg-3 active" href="#">Legends</a>
+                  <a class="nav-link me-lg-3" href="stadium.html">Stadium</a>
+                  <a class="nav-link me-lg-3" href="trophies.html">Trophies</a>
+                </div>
+                <button type="button" class="btn btn-block subscribeBtn ms-lg-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Become a Fan
+                </button>
+              </div>
+            </div>
         </nav>
-
     </header>
 
-    <main class="leg-main">
+    <main class="container">
 
-        <h1>Meet some of our most important Legends</h1>
+      <h1 class="text-center">Meet some of our most important Legends</h1>
 
         <section>
 
             <h2>Cristiano Ronaldo</h2>
 
-            <div class="grid-leg">
+            <div class="row">
 
-                <img src="images/cristiano-ronaldo-400.jpg" alt="Cristiano Ronaldo">
+              <div class="col-12 col-sm-5">
+                <img src="images/cristiano-ronaldo-400.jpg" class="img-fluid" alt="Cristiano Ronaldo">
+              </div>
 
-                <div>
+              <div class="col-12 col-sm-7">
 
-                    <p>Cristiano Ronaldo is a part of Real Madrid&apos;s legacy and will forever be remember as one of the great icons throughout the club&apos;s history. He was unveiled at the Santiago Bernab&eacute;u on 6 July 2009, where he was joined by Eusebio and Alfredo Di St&eacute;fano, and since that day, the goals just kept coming. He netted 451 times in 438 competitive appearances with Real Madrid (averaging over a goal a game). He registered in all of the competitions he featured in: 312 in LaLiga, 105 in the Champions League, 22 in the Copa del Rey, six in the Club World Cup, four in the Spanish Super Cup and two in the UEFA Super Cup.</p>
+                  <p>Cristiano Ronaldo is a part of Real Madrid&apos;s legacy and will forever be remember as one of the great icons throughout the club&apos;s history. He was unveiled at the Santiago Bernab&eacute;u on 6 July 2009, where he was joined by Eusebio and Alfredo Di St&eacute;fano, and since that day, the goals just kept coming. He netted 451 times in 438 competitive appearances with Real Madrid (averaging over a goal a game). He registered in all of the competitions he featured in: 312 in LaLiga, 105 in the Champions League, 22 in the Copa del Rey, six in the Club World Cup, four in the Spanish Super Cup and two in the UEFA Super Cup.</p>
 
-                    <h3>Honours</h3>
+                  <h3>Honours</h3>
            
-                    <ul class="logo-bullet">
-                        <li>4 European Cups</li>
-                        <li>3 Club World Cups</li>
-                        <li>3 UEFA Super Cups</li>
-                        <li>2 LaLiga titles</li>
-                        <li>2 Copas del Rey</li>
-                        <li>2 Spanish Super Cups</li>
-                    </ul>
+                  <ul class="logo-bullet">
+                      <li>4 European Cups</li>
+                      <li>3 Club World Cups</li>
+                      <li>3 UEFA Super Cups</li>
+                      <li>2 LaLiga titles</li>
+                      <li>2 Copas del Rey</li>
+                      <li>2 Spanish Super Cups</li>
+                  </ul>
 
-                </div>
-
-            </div>
-
-        </section>
-
-        <section>
-
-            <h2>Ra&uacute;l Gonz&aacute;les Blanco</h2>
-
-            <div class="grid-leg">          
-
-                <img src="images/raul-gonzales-400.png" alt="Raul Gonzales Blanco">
-
-                <div>
-
-                    <p>A Real Madrid symbol. The eternal captain who represented Madrid&apos;s values on the pitch. Raul was a forward with an almost infinite instinct. He was an example for everyone, putting in the maximum effort in every game, irrespective of the opponent. He would give it his all, having an insatiable appetite, something that was evident with each action. He was always alert for rebounds. An excellent role&hyphen;model for anyone who has ever dreamt of being a footballer.</p>
-
-                    <h3>Honours</h3>
-
-                    <ul class="logo-bullet">
-                        <li>3 European Cups</li>
-                        <li>2 Intercontinental Cups</li>
-                        <li>1 European Super Cup</li>
-                        <li>6 LaLiga titles</li>
-                        <li>4 Spanish Super Cups</li>
-                    </ul>
-
-                </div>
+              </div>
 
             </div>
 
@@ -89,81 +121,162 @@
 
         <section>
 
-            <h2>Iker Casillas</h2>
+          <h2>Ra&uacute;l Gonz&aacute;les Blanco</h2>
 
-            <div class="grid-leg">
+          <div class="row">
 
-                <img src="images/iker-casillas-400.jpg" alt="Iker Casillas">
+            <div class="col-12 col-sm-5">
+              <img src="images/raul-gonzales-400.png" class="img-fluid" alt="Raul Gonzales Blanco">
+            </div>
 
-                <div>
+            <div class="col-12 col-sm-7">
 
-                    <p>A Madrid legend, Iker Casillas is the best goalkeeper in Real Madrid&apos;s history and in the history of Spanish football. He arrived at the club aged 9 and wore the Whites shirt for 25 years. Throughout that time he became one of the benchmarks in the club&apos;s history, winning the respect, affection and admiration of Madrid supporters.</p>
+                <p>A Real Madrid symbol. The eternal captain who represented Madrid&apos;s values on the pitch. Raul was a forward with an almost infinite instinct. He was an example for everyone, putting in the maximum effort in every game, irrespective of the opponent. He would give it his all, having an insatiable appetite, something that was evident with each action. He was always alert for rebounds. An excellent role&hyphen;model for anyone who has ever dreamt of being a footballer.</p>
 
-                    <h3>Honours</h3>
+                <h3>Honours</h3>
 
-                    <ul class="logo-bullet">
-                        <li>3 European Cups</li>
-                        <li>3 Club World Cups</li>
-                        <li>2 Intercontinental Cups</li>
-                        <li>2 European Super Cups</li>
-                        <li>5 LaLiga titles</li>
-                        <li>2 Copas del Rey</li>
-                        <li>4 Spanish Super Cups</li>
-                    </ul>
-
-                </div>
-
-                
+                <ul class="logo-bullet">
+                    <li>3 European Cups</li>
+                    <li>2 Intercontinental Cups</li>
+                    <li>1 European Super Cup</li>
+                    <li>6 LaLiga titles</li>
+                    <li>4 Spanish Super Cups</li>
+                </ul>
 
             </div>
+
+          </div>
 
         </section>
 
         <section>
+
+          <h2>Iker Casillas</h2>
+
+          <div class="row">
+
+            <div class="col-12 col-sm-5">
+              <img src="images/iker-casillas-400.jpg" class="img-fluid" alt="Iker Casillas">
+            </div>
+
+              
+            <div class="col-12 col-sm-7">
+
+                <p>A Madrid legend, Iker Casillas is the best goalkeeper in Real Madrid&apos;s history and in the history of Spanish football. He arrived at the club aged 9 and wore the Whites shirt for 25 years. Throughout that time he became one of the benchmarks in the club&apos;s history, winning the respect, affection and admiration of Madrid supporters.</p>
+
+                <h3>Honours</h3>
+
+                <ul class="logo-bullet">
+                    <li>3 European Cups</li>
+                    <li>3 Club World Cups</li>
+                    <li>2 Intercontinental Cups</li>
+                    <li>2 European Super Cups</li>
+                    <li>5 LaLiga titles</li>
+                    <li>2 Copas del Rey</li>
+                    <li>4 Spanish Super Cups</li>
+                </ul>
+
+            </div>
+
+          </div>
+
+      </section>
+
+      <section>
 
         <h2>Zinedine Zidane</h2>
 
-            <div class="grid-leg">           
+            <div class="row">
+              
+              <div class="col-12 col-sm-5">
+                <img src="images/zidane-400.jpg" class="img-fluid" alt="Zinedine Zidane">
+              </div>
 
-                <img src="images/zidane-400.jpg" alt="Zinedine Zidane">
+              <div class="col-12 col-sm-7">
 
-                <div>
+                  <p>A genius. Zinedine Zidane marked an era in world football with his elegance and technical skills. Blessed with natural talent for this sport, the French midfielder won everything that could possibly be won, both with his clubs as well as with the French national team. A magical player who elected to close out his historic sporting career at Real Madrid, together conquering the 2002 Champions League title.</p>
 
-                    <p>A genius. Zinedine Zidane marked an era in world football with his elegance and technical skills. Blessed with natural talent for this sport, the French midfielder won everything that could possibly be won, both with his clubs as well as with the French national team. A magical player who elected to close out his historic sporting career at Real Madrid, together conquering the 2002 Champions League title.</p>
+                  <h3>Honours</h3>
 
-                    <h3>Honours</h3>
-
-                    <ul class="logo-bullet">
-                        <li>1 European Cup</li>
-                        <li>1 Intercontinental Cup</li>
-                        <li>1 European Super Cup</li>
-                        <li>1 League</li>
-                        <li>2 Spanish Super Cups</li>
-                        <li>As a coach:
-                            <ul>
-                                <li>3 European Cups</li>
-                                <li>2 FIFA Club World Cup</li>
-                                <li>2 European Super Cup</li>
-                                <li>2 LaLiga titles</li>
-                                <li>2 Spanish Super Cups</li>
-                            </ul>
-                        </li>
+                  <ul class="logo-bullet">
+                      <li>1 European Cup</li>
+                      <li>1 Intercontinental Cup</li>
+                      <li>1 European Super Cup</li>
+                      <li>1 League</li>
+                      <li>2 Spanish Super Cups</li>
+                      <li>As a coach:
+                          <ul>
+                              <li>3 European Cups</li>
+                              <li>2 FIFA Club World Cup</li>
+                              <li>2 European Super Cup</li>
+                              <li>2 LaLiga titles</li>
+                              <li>2 Spanish Super Cups</li>
+                          </ul>
+                      </li>
     
-                    </ul>
+                  </ul>
 
-                </div>
+              </div>
             
             </div>
 
-        </section>
+      </section>
 
     </main>
 
-    <footer class="foot">
-        <p>If you have any suggestions or questions feel free to visit my Twitter <a href="https://twitter.com/sanabriadiegop"><i class="fab fa-twitter-square"></i></a> or <a href="mailto:sanabria.diego@outlook.com?subject=My%20Question%20or%20Recomendation">send me an email</a></p>
-    </footer> 
 
-    
+    <footer>
+
+        <div class="container">
+        
+          <div class="row align-items-center">
+  
+            <div class="col-6 col-sm-4">
+  
+              <i class="fas fa-home"></i><a href="index.html"> Home</a><br>
+              <i class="fas fa-tshirt"></i><a href="#"> Legends</a><br>
+              <i class="fas fa-futbol"></i><a href="stadium.html"> Stadium</a><br>
+              <i class="fas fa-trophy"></i><a href="trophies.html"> Trophies</a>
+  
+            </div>
+  
+            <div class="mt-3 col-6 col-sm-4">
+  
+              <h5>Real Madrid Social media</h5>
+            <a href="https://www.facebook.com/RealMadrid"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/realmadrid"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/realmadrid/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.youtube.com/user/realmadridcf"><i class="fab fa-youtube-square"></i></a>
+
+            <h5>My Social media</h5>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/sanabriadiegop"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+  
+            </div>
+  
+            <div class="col-12 mt-3 col-sm-4">
+  
+              <button type="button" class="d-block btn btn-block  mx-auto subscribeBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Become a Fan</button>
+              
+            </div>
+  
+          </div>
+  
+          <p class="mt-3 text-center">Copyright&copy; 2021 | REAL MADRID FANS</p>
+  
+      </div>
+  
+      </footer>
+  
+  
+
+
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>
