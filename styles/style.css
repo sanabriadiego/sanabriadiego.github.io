@@ -1,14 +1,17 @@
-/*GENERAL STYLES*/
+/*------------------------------------------------------------------------------------------------------
+GENERAL STYLES
+---------------------------------------------------------------------------------------------------*/
 
 html{
-    font-family: 'Noto Serif', serif;
     font-size: 10px;
 }
 
+body{
+    font-family: 'Noto Serif', serif;
+}
 
 h1{
     font-size: 4em;
-    text-align: center;
     
 }
 
@@ -20,7 +23,9 @@ h3{
     font-size: 2.5em;
 }
 
-h1, h2, h3{
+
+h1, h2, h3, h5{
+    margin-top: 30px;
     font-family: 'Merriweather', serif;
 
 }
@@ -30,88 +35,43 @@ p{
     line-height: 1.7em;
     text-align: justify;
 }
+/*------------------------------------------------------------------------------------------------------
+MODAL
+---------------------------------------------------------------------------------------------------*/
 
+.modal-header{
+    background-color: #835198;
+}
 
-/*NAV*/
-
-.main-nav{
+.modal-title{
     font-size: 2em;
+    font-weight: 600;
 }
 
-.main-nav ul{
-    margin: 0 auto;
-    padding-left: 0;
-    list-style-type: none;
-
+.modal-body label,
+.modal-body input,
+.modal-footer button{
+    font-size: 1.7em;
 }
 
-.main-nav ul li{
-    background-color: #004996;
-    text-align: center;
-    padding: 5px;
-    border-bottom: 1px solid #fff;
-    border-radius: 5px;
+/*------------------------------------------------------------------------------------------------------
+NAVIGATION BAR
+---------------------------------------------------------------------------------------------------*/
+
+
+.nav-link{
+    font-size: 1.7em;
 }
 
-.main-nav ul li a:hover,
-.main-nav ul li a:active{
-    color: #f27500;
-
-}
-
-.main-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-
-
-}
-
-/*FOOTER*/
-
-.foot{
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-}
-
-.foot p{
-    font-size: 1.5em;
-    display: inline;
-}
-
-.foot a{
-    color: #004996;
-
-}
-
-i.fab{
-    font-size: 2em;
-    margin: 0 0.3em;
-    color: #1da1f2;
-
-}    
-
-
-/*INDEX*/
-
-.index-main section{
-    margin-top: 50px;
-}
-
-.index-main img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
+.subscribeBtn{
+    background-color: #f5692b;
+    font-size: 1.7em;
 }
 
 
-/*LEGENDS*/
-
-.leg-main section img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-}
+/*------------------------------------------------------------------------------------------------------
+LEGENDS
+---------------------------------------------------------------------------------------------------*/
 
 div ul{
     font-size: 1.7em;
@@ -136,91 +96,51 @@ ul ul{
     background-repeat: no-repeat;
 }
 
+/*------------------------------------------------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------------------------------------------*/
 
-/*STADIUM*/
-
-.std-main section img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
+footer{
+    margin-top: 30px;
+    background: #000;
 }
 
-section iframe{
-    width: 350px;
-    height: 500px;
-
+footer a{
+    font-size: 1.7em;
+    text-decoration: none;
 }
 
-/*TROPHIES*/
-
-.tp-main section img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-
+footer h5{
+    font-size: 1.7em;
+    color: #fff;
 }
 
-/*MEDIA QUERIES*/
+i.fab, i.fas{
+    font-size: 2em;
+    margin-right: 5px;
+}
 
-@media screen and (min-width: 800px){
+i.fas{
+    color: #f5692b;
+}
 
-    /*INDEX*/
+.fa-facebook-square{
+    color: #0e90f2;
+}
 
-    .grid-main{
-        display:grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 30px;
-    }
+.fa-twitter-square{
+    color: #1d9bef;
+}
 
-    .float-main img{
-        float: left;
-        margin-right: 30px;
-    }
+.fa-instagram-square{
+    color: #d00a5f;
+}
 
-    p{
-        margin-top: 0;
-    }
+.fa-youtube-square{
+    color: #ff0000;
+}
 
-    /*NAV*/
-
-    .main-nav ul{
-        display:flex;
-        flex-wrap: wrap;
-    }
-
-    .main-nav ul li{
-        flex: 1;
-    }
-
-    /*LEGENDS*/
-
-    .grid-leg{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-    }
-
-    /*STADIUM*/
-
-    .std-main .float-std img{
-        float: left;
-        margin-right: 30px;
-    }
-
-    section iframe{
-        width: 800px;
-        height: 600px;
-        margin: 0 auto;
-    
-    }
-
-    /*TROPHIES*/
-
-    .grid-tp{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-    }
-
-
+footer p{
+    font-size: 1.3em;
+    color: #fff;
 }
