@@ -2,127 +2,264 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Sanabria">
-    <meta name="description" content="This is a website developed for the last course of the Web Design For Everybody Specialization on Coursera. I want to show most of the ideas taught on this course, and my aprecciation to Colleen van Lent Ph.D., for being such an amazing professor">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <!--Local CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
-
 <body>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Become an Official Member!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="container">
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="exampleInputName" class="form-label">Name</label>
+              </div>
+              <div class="col-7">
+                <input type="text" class="form-control" id="exampleInputName">
+              </div>   
+            </div>
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="examplebirthday" class="form-label">Birthday</label>
+              </div>
+              <div class="col-7">
+                <input type="date" class="form-control" id="examplebirthday">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-3">
+                <label for="exampleEmail" class="form-label">Email</label>
+              </div>
+              <div class="col-7">
+                <input type="email" class="form-control" id="exampleEmail" placeholder="@example">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <header>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="legends.html">Legends</a></li>
-                <li><a href="stadium.html">Stadium</a></li>
-                <li><a href="trophies.html">Trophies</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/rm-logo-mb.png" alt="Real Madrid Logo" width="30" height="38" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link me-lg-3 active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link me-lg-3" href="legends.html">Legends</a>
+                  <a class="nav-link me-lg-3" href="stadium.html">Stadium</a>
+                  <a class="nav-link me-lg-3" href="trophies.html">Trophies</a>
+                </div>
+                <button type="button" class="btn btn-block subscribeBtn ms-lg-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Become a Fan
+                </button>
+              </div>
+            </div>
         </nav>
-
     </header>
 
-    <main class="index-main">
-        
-        <h1>Welcome to the Real Madrid Fan&apos;s Web Page</h1>
-            
+    <main class="container">
+
+        <div>
+            <h1 class="text-center">Welcome to the Real Madrid Fan&apos;s Web Page</h1>
+        </div>
+
         <section>
 
             <h2>How it all started</h2>
 
-            <div class="grid-main">
+            <div class="row">
+
+                <div class="col-12 col-sm-5 col-xl-3">
+                  <img src="images/rm-logo-mb.png" class="img-fluid" alt="Real Madrid Logo">
+                </div>
+
+                <div class="col-12 col-sm-7 col-xl-9">
+
+                  <p>Football was introduced to Madrid by students of the Instituci&oacute;n Libre de Ense&ntilde;anza. They included several Oxbridge graduates. In 1897, they founded a club called Sky, playing on Sunday mornings at Moncloa. In 1900, they split into two different clubs: New Foot-Ball de Madrid and Madrid Football Club. On 6 March 1902, after a new Board presided by Juan Padr&oacute;s had been elected, Madrid Football Club was officially founded and over the next few years won four consecutive Copa del Rey titles, which was the only nationwide competition at that time.<br>
+
+                  In 1912, they moved to a ground called Campo de O&apos;Donnell, after previously moving between some minor grounds. In 1920, the club&apos;s name was changed to Real Madrid after King Alfonso XIII, a reputed football fan, granted the title of <em>real</em> &lpar;&quot;royal&quot; in English&rpar; to the club. When the Second Spanish Republic was proclaimed in 1931, however, the club dropped both the word Real and the royal crown from the emblem, being known from then on and until the end of the Spanish Civil War as Madrid C.F. only. The addition of the purple band to the emblem dates back to the Republican period and has remained there ever since.</p>
+
+                </div>
                 
-                <img src="images/rm-logo-mb.png" alt="Real Madrid Logo">
-
-                <p>Football was introduced to Madrid by students of the Instituci&oacute;n Libre de Ense&ntilde;anza. They included several Oxbridge graduates. In 1897, they founded a club called Sky, playing on Sunday mornings at Moncloa. In 1900, they split into two different clubs: New Foot-Ball de Madrid and Madrid Football Club. On 6 March 1902, after a new Board presided by Juan Padr&oacute;s had been elected, Madrid Football Club was officially founded and over the next few years won four consecutive Copa del Rey titles, which was the only nationwide competition at that time.<br>
-
-                In 1912, they moved to a ground called Campo de O&apos;Donnell, after previously moving between some minor grounds. In 1920, the club&apos;s name was changed to Real Madrid after King Alfonso XIII, a reputed football fan, granted the title of <em>real</em> &lpar;&quot;royal&quot; in English&rpar; to the club. When the Second Spanish Republic was proclaimed in 1931, however, the club dropped both the word Real and the royal crown from the emblem, being known from then on and until the end of the Spanish Civil War as Madrid C.F. only. The addition of the purple band to the emblem dates back to the Republican period and has remained there ever since.</p>
-
             </div>
 
         </section>
 
         <section>
 
-            <h2>The importance of Santiago Bernab&eacute;u</h2>
+          <h2>The importance of Santiago Bernab&eacute;u</h2>
 
-            <div class="grid-main">
+          <div class="row">
 
-                <img src="images/santiago-bernabeu-400.png" alt="Santiago Bernabeu">
+            <div class="col-12 order-sm-last col-sm-5 col-xl-3">
+              <img src="images/santiago-bernabeu-400.png" class="img-fluid" alt="Santiago Bernabeu">
+            </div>
 
-                <p>Before becoming president in 1945, Santiago Bernab&eacute;u Yeste had already carried out the functions of player, first&dash;team captain, club maintenance, first&dash;team manager and director in an association with the club that would last nearly 70 years. He was responsible for rebuilding the club after the Civil War and under his presidency the construction of the Santiago Bernab&eacute;u Stadium and the Ciudad Deportiva.<br>
+            <div class="col-12 order-sm-first col-sm-7 col-xl-9">
+
+              <p>Before becoming president in 1945, Santiago Bernab&eacute;u Yeste had already carried out the functions of player, first&dash;team captain, club maintenance, first&dash;team manager and director in an association with the club that would last nearly 70 years. He was responsible for rebuilding the club after the Civil War and under his presidency the construction of the Santiago Bernab&eacute;u Stadium and the Ciudad Deportiva.<br>
 
                 Finally, beginning in 1953, Bernab&eacute;u embarked upon a strategy of signing world&dash;class players from abroad, the most prominent being the Argentine Alfredo di St&eacute;fano, and built the world&apos;s first truly multinational squad. During Bernab&eacute;u&apos;s presidency, many of Real Madrid&apos;s most legendary names played for the club, including Di St&eacute;fano, Ferenc Pusk&aacute;s, Francisco Gento, H&eacute;ctor Rial, Raymond Kopa, Jos&eacute; Santamar&iacute;a, Miguel Mu&ntilde;oz, Amancio and Santillana.<br>
-
+  
                 It was under Bernab&eacute;u&apos;s guidance that Real Madrid became established as a major force in both Spanish and European football. Before passing away in 1978, Bernab&eacute;u had been the club&apos;s president for 33 years, during which Real won one Intercontinental Cup, six European Cups, 16 La Liga titles and six Spanish Cups.</p>
 
             </div>
 
-                    
-        </section>
+          </div>
 
-        <section>
+                  
+      </section>
 
-            <h2>Glorious Moments</h2>
+      <section>
 
-            <h3><em>La Quinta del Buitre</em></h3>
+          <h2>Glorious Moments</h2>
 
-            <div class="float-main">
+          <h3><em>La Quinta del Buitre</em></h3>
 
-                <img src="images/la-quinta-400.jpg" alt="La Quinta del Buitre">
+          <div class="row">
 
-                <p>It was the name given by Spanish sport journalist Julio C&eacute;sar Iglesias to the five homegrown Real Madrid players who were at the core of the team that dominated Spanish football in the 1980s. The name, meaning <em>Vulture&apos;s Cohort</em> in English, was derived from the nickname given to its most charismatic member, Emilio Butrague&ntilde;o. The other four members included Manolo Sanch&iacute;s, Mart&iacute;n V&aacute;zquez, M&iacute;chel and Miguel Pardeza.<br>
-            
-                Sanch&iacute;s and Mart&iacute;n V&aacute;zquez were the first to play for the first team of Real Madrid, making their debut at Murcia on 4 December 1983 under coach Alfredo Di St&eacute;fano. Both played surprisingly well, with Sanch&iacute;s scoring the game&apos;s winner. A few months later, on 5 February 1984, Butrague&ntilde;o debuted in an away match at C&iacute;diz. El Buitre was an instant sensation and scored twice. Pardeza was added to the first team that same season and M&iacute;chel followed at the start of the next.<br>
-
-                With La Quinta del Buitre &lpar;reduced to four members when Pardeza left the club for Zaragoza in 1986&rpar;, Real Madrid had one of the best teams in Spain and Europe during the second half of the 1980s, winning, amongst others, two UEFA Cups and five Spanish championships in a row. Their record was only blemished by their failure to win the European Cup, and their continued abject defeats against the far superior Milan side of the time.</p>
-
+            <div class="col-12 col-lg-4">
+              <img src="images/la-quinta-400.jpg" class="img-fluid" alt="La Quinta del Buitre">
             </div>
 
-            <h3><em>Los Gal&aacute;cticos</em></h3>
+            <div class="col-12 col-lg-8">
 
-            <div class="float-main">
+              <p>It was the name given by Spanish sport journalist Julio C&eacute;sar Iglesias to the five homegrown Real Madrid players who were at the core of the team that dominated Spanish football in the 1980s. The name, meaning <em>Vulture&apos;s Cohort</em> in English, was derived from the nickname given to its most charismatic member, Emilio Butrague&ntilde;o. The other four members included Manolo Sanch&iacute;s, Mart&iacute;n V&aacute;zquez, M&iacute;chel and Miguel Pardeza.<br>
+          
+              Sanch&iacute;s and Mart&iacute;n V&aacute;zquez were the first to play for the first team of Real Madrid, making their debut at Murcia on 4 December 1983 under coach Alfredo Di St&eacute;fano. Both played surprisingly well, with Sanch&iacute;s scoring the game&apos;s winner. A few months later, on 5 February 1984, Butrague&ntilde;o debuted in an away match at C&iacute;diz. El Buitre was an instant sensation and scored twice. Pardeza was added to the first team that same season and M&iacute;chel followed at the start of the next.<br>
+  
+              With La Quinta del Buitre &lpar;reduced to four members when Pardeza left the club for Zaragoza in 1986&rpar;, Real Madrid had one of the best teams in Spain and Europe during the second half of the 1980s, winning, amongst others, two UEFA Cups and five Spanish championships in a row. Their record was only blemished by their failure to win the European Cup, and their continued abject defeats against the far superior Milan side of the time.</p>
+  
+            </div>
+              
+          </div>
 
-                <img src="images/galacticos-400.jpg" alt="Los Galacticos">
+          <h3><em>Los Gal&aacute;cticos</em></h3>
 
-                <p>Though Real Madrid had already won two European Cups in 1998 and 2000 under the presidency of Lorenzo Sanz, Sanz lost his re-election bid to P&eacute;rez. P&eacute;rez won by promising an aggressive new transfer policy and expensive new signings, in particular, Lu&iacute;s Figo from rivals Barcelona.<br>
-            
-                After the purchase of Figo for &euro;62 million, a world&dash;record transfer fee, P&eacute;rez sought to buy at least one world&dash;class superstar player &lpar;dubbed a gal&aacute;ctico&rpar; each summer. The record was broken a year later by the purchase of Zinedine Zidane from Juventus for &euro;75 million. After a demand for youth integration in the side, which coincided with the appointment of Vicente del Bosque, the policy was redubbed as <em>Zidanes y Pavones</em>, with the name deriving from Zidane and Francisco Pav&oacute;n, a product from the club&apos;s youth academy &mdash; the idea was to sign one major superstar per year, and promote youth players sporadically.<br>
+          <div class="row">
 
-                Immediate success followed for three seasons, with Real winning La Liga in 2000&dash;01 and 2002&dash;03, and claiming the UEFA Champions League in 2001&dash;02, with Zidane scoring the winning goal in the final. After winning the 2002&dash;03 La Liga title, Real Madrid added English midfielder David Beckham from Manchester United for &euro;35 million.<br>
+            <div class="col-12 order-lg-last col-lg-4">
+              <img src="images/galacticos-400.jpg" class="img-fluid" alt="Los Galacticos">
+            </div>
 
-                Some of the most important players of this era were; Lu&iacute;s Figo, Zinedine Zidane, Ronaldo, David Beckham, Michael Owen, Robinho, Sergio Ramos, Fernando Hierro, Ra&uacute;l, Guti, Roberto Carlos, Fernando Morientes, Iv&aacute;n Helguera, M&iacute;chel Salgado, Steve McManaman, Nicol&aacute;s Anelka, Iker Casillas and Claud Mak&eacute;l&eacute;l&eacute;.</p>
+            <div class="col-12 order-lg-first col-lg-8">
+
+              <p>Though Real Madrid had already won two European Cups in 1998 and 2000 under the presidency of Lorenzo Sanz, Sanz lost his re-election bid to P&eacute;rez. P&eacute;rez won by promising an aggressive new transfer policy and expensive new signings, in particular, Lu&iacute;s Figo from rivals Barcelona.<br>
+          
+              After the purchase of Figo for &euro;62 million, a world&dash;record transfer fee, P&eacute;rez sought to buy at least one world&dash;class superstar player &lpar;dubbed a gal&aacute;ctico&rpar; each summer. The record was broken a year later by the purchase of Zinedine Zidane from Juventus for &euro;75 million. After a demand for youth integration in the side, which coincided with the appointment of Vicente del Bosque, the policy was redubbed as <em>Zidanes y Pavones</em>, with the name deriving from Zidane and Francisco Pav&oacute;n, a product from the club&apos;s youth academy &mdash; the idea was to sign one major superstar per year, and promote youth players sporadically.<br>
+  
+              Immediate success followed for three seasons, with Real winning La Liga in 2000&dash;01 and 2002&dash;03, and claiming the UEFA Champions League in 2001&dash;02, with Zidane scoring the winning goal in the final. After winning the 2002&dash;03 La Liga title, Real Madrid added English midfielder David Beckham from Manchester United for &euro;35 million.<br>
+  
+              Some of the most important players of this era were; Lu&iacute;s Figo, Zinedine Zidane, Ronaldo, David Beckham, Michael Owen, Robinho, Sergio Ramos, Fernando Hierro, Ra&uacute;l, Guti, Roberto Carlos, Fernando Morientes, Iv&aacute;n Helguera, M&iacute;chel Salgado, Steve McManaman, Nicol&aacute;s Anelka, Iker Casillas and Claud Mak&eacute;l&eacute;l&eacute;.</p>
+
+            </div>
+      
+          </div>
+
+          <h3><em>La Décima</em> &amp; More</h3>
+
+          <div class="row">
+
+            <div class="col-12 col-lg-4">
+              <img src="images/la-decima-400.jpg" class="img-fluid" alt="La Decima">
+            </div>
+
+            <div class="col-12 col-lg-8">
+
+              <p>On 25 June 2013, Carlo Ancelotti became the manager of Real Madrid after signing a three&dash;year deal. A day later, he was introduced at his first press conference for Madrid, where it was announced that both Zinedine Zidane and Paul Clement will be his assistants. On 1 September 2013, the long&dash;awaited transfer of Gareth Bale from Tottenham Hotspur was announced, with Bale joining Karim Benzema and Cristiano Ronaldo in the Madrid attack. The transfer of the Welshman was reportedly a new world record, with the transfer price around &euro;100 million. In Ancelotti&apos;s first season at the club, Real Madrid won the Copa del Rey, with Bale scoring the winner in the final against Barcelona. On 24 May 2014, Real Madrid defeated city rivals Atl&eacute;tico Madrid in the Champions League Final, winning their first European title since 2002, and they became the first team to win ten European Cups, an achievement known as <em>La D&eacute;cima</em>. Real Madrid&apos;s attacking trio the <abbr title="Benzema Bale Cristiano">BBC</abbr>, finished the season with 97 goals.<br>
+
+              On 4 January 2016, it was announced that Ben&iacute;tez was sacked and replaced by Zinedine Zidane. On 28 May 2016, Real Madrid defeated city rivals Atl&eacute;tico Madrid in the Champions League Final, winning their eleventh European title. On 3 June 2017, Madrid won the 2017 UEFA Champions League Final 4&dash;1 against Juventus, with two goals from Ronaldo and goals from Casemiro and Asensio, to win their second consecutive and twelfth overall title. With that win, Madrid became the first team to defend their title in the Champions League era. Real Madrid won the Champions League for the third time in a row by defeating Liverpool 3&dash;1, becoming the first team to achieve that feat since 1976.<br>
+  
+              Some of the most important players of this era were; Kak&aacute;, Karim Benzema, Cristiano Ronaldo, Xabi Alonso, &Aacute;ngel Di Mar&iacute;a, Luca Modri&cacute;, Gareth Bale, Toni Kroos, James Rodr&iacute;guez, Iker Casillas, Sergio Ramos, Pepe, Marcelo, Gonzalo Higua&iacute;n, Mesut &Ouml;zil Rapha&euml;l Varane, Dani Carvajal, Isco, Casemiro, Keylor Navas and Marco Asensio.</p>
         
             </div>
 
-            <h3><em>La Décima</em> &amp; More</h3>
+          </div>
 
-            <div class="float-main">
-
-                <img src="images/la-decima-400.jpg" alt="La Decima">
-
-                <p>On 25 June 2013, Carlo Ancelotti became the manager of Real Madrid after signing a three&dash;year deal. A day later, he was introduced at his first press conference for Madrid, where it was announced that both Zinedine Zidane and Paul Clement will be his assistants. On 1 September 2013, the long&dash;awaited transfer of Gareth Bale from Tottenham Hotspur was announced, with Bale joining Karim Benzema and Cristiano Ronaldo in the Madrid attack. The transfer of the Welshman was reportedly a new world record, with the transfer price around &euro;100 million. In Ancelotti&apos;s first season at the club, Real Madrid won the Copa del Rey, with Bale scoring the winner in the final against Barcelona. On 24 May 2014, Real Madrid defeated city rivals Atl&eacute;tico Madrid in the Champions League Final, winning their first European title since 2002, and they became the first team to win ten European Cups, an achievement known as <em>La D&eacute;cima</em>. Real Madrid&apos;s attacking trio the <abbr title="Benzema Bale Cristiano">BBC</abbr>, finished the season with 97 goals.<br>
-
-                On 4 January 2016, it was announced that Ben&iacute;tez was sacked and replaced by Zinedine Zidane. On 28 May 2016, Real Madrid defeated city rivals Atl&eacute;tico Madrid in the Champions League Final, winning their eleventh European title. On 3 June 2017, Madrid won the 2017 UEFA Champions League Final 4&dash;1 against Juventus, with two goals from Ronaldo and goals from Casemiro and Asensio, to win their second consecutive and twelfth overall title. With that win, Madrid became the first team to defend their title in the Champions League era. Real Madrid won the Champions League for the third time in a row by defeating Liverpool 3&dash;1, becoming the first team to achieve that feat since 1976.<br>
-
-                Some of the most important players of this era were; Kak&aacute;, Karim Benzema, Cristiano Ronaldo, Xabi Alonso, &Aacute;ngel Di Mar&iacute;a, Luca Modri&cacute;, Gareth Bale, Toni Kroos, James Rodr&iacute;guez, Iker Casillas, Sergio Ramos, Pepe, Marcelo, Gonzalo Higua&iacute;n, Mesut &Ouml;zil Rapha&euml;l Varane, Dani Carvajal, Isco, Casemiro, Keylor Navas and Marco Asensio.</p>
-        
-            </div>
-
-        </section>
+      </section>
 
     </main>
 
-    <footer class="foot">
-        <p>If you have any suggestions or questions feel free to visit my Twitter <a href="https://twitter.com/sanabriadiegop"><i class="fab fa-twitter-square"></i></a> or <a href="mailto:sanabria.diego@outlook.com?subject=My%20Question%20or%20Recomendation">send me an email</a></p>
-        
-    </footer> 
-   
+    <footer>
+
+      <div class="container">
+      
+        <div class="row align-items-center">
+
+          <div class="col-6 col-sm-4">
+
+            <i class="fas fa-home"></i><a href="#"> Home</a><br>
+            <i class="fas fa-tshirt"></i><a href="legends.html"> Legends</a><br>
+            <i class="fas fa-futbol"></i><a href="stadium.html"> Stadium</a><br>
+            <i class="fas fa-trophy"></i><a href="trophies.html"> Trophies</a>
+
+          </div>
+
+          <div class="mt-3 col-6 col-sm-4">
+
+            <h5>Real Madrid Social media</h5>
+            <a href="https://www.facebook.com/RealMadrid"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/realmadrid"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/realmadrid/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.youtube.com/user/realmadridcf"><i class="fab fa-youtube-square"></i></a>
+
+            <h5>My Social media</h5>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/sanabriadiegop"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+
+          </div>
+
+          <div class="col-12 mt-3 col-sm-4">
+
+            <button type="button" class="d-block btn btn-block  mx-auto subscribeBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Become a Fan
+            </button>
+            
+          </div>
+
+        </div>
+
+        <p class="mt-3 text-center">Copyright&copy; 2021 | REAL MADRID FANS</p>
+
+    </div>
+
+    </footer>
+
+
+
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>
